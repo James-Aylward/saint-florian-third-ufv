@@ -4,7 +4,7 @@
 #include "esp32-hal-ledc.h"
 #include <WiFi.h>
 
-const char *ssid = "Saint Florian II UFV";
+const char *ssid = "Saint Florian III UFV";
 const char *password = "goldenboys";
 
 camera_config_t generate_camera();

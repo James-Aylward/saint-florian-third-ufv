@@ -315,6 +315,17 @@ static esp_err_t cmd_handler(httpd_req_t *req)
         digitalWrite(33, ((val == 1) ? HIGH : LOW));
         digitalWrite(MOTOR_ENABLE, LOW);
     }
+    
+    else if (!strcmp(variable, "athorizontal"))
+    {
+        move_servo("pan", val);
+    }
+
+    else if (!strcmp(variable, "atvertical"))
+    {
+        move_servo("tilt", val);
+    }
+
     else
         res = -1;
 
